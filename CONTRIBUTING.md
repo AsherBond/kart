@@ -49,7 +49,7 @@ When using CI artifacts to build this is not just recommended, but required.
 
 Then configure Kart:
 ```console
-$ cmake -B build -S . -DPython3_EXECUTABLE=/path/to/python3.10 -DUSE_VCPKG=ON
+$ cmake -B build -S . -DPython3_EXECUTABLE=/path/to/python3.10
 ```
 
 Configuration builds all the dependencies using [VCPKG](https://github.com/microsoft/vcpkg)
@@ -131,7 +131,7 @@ When using CI artifacts to build this is not just recommended, but required.
 Configure and build Kart:
 
 ```console
-> cmake -B build -S . -DPython3_EXECUTABLE=C:\path\to\python310.exe -DUSE_VCPKG=ON
+> cmake -B build -S . -DPython3_EXECUTABLE=C:\path\to\python310.exe
 > cmake --build build
 > .\build\venv\Scripts\kart.exe --version
 ```

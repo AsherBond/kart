@@ -54,7 +54,7 @@ message(STATUS "Kart build version: ${KART_VERSION}")
 # options
 #
 
-option(USE_VCPKG "Use vcpkg for vendor dependencies")
+option(USE_VCPKG "Use vcpkg for vendor dependencies" ON)
 
 if(MACOS OR LINUX)
   option(CLI_HELPER "Enable the CLI helper on macOS & Linux" OFF)
