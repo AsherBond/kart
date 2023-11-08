@@ -419,6 +419,10 @@ jobs:
         run: |
           ctest --preset=ci-e2e-linux
 
+      - name: "Setup tmate session"
+        if: ${{ failure() }}
+        uses: mxschmitt/action-tmate@v3
+
       - name: "package: TGZ & DEB & RPM"
         shell: bash
         run: |
